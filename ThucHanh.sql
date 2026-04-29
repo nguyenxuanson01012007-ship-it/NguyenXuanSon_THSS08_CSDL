@@ -42,15 +42,16 @@ VALUES
 
 INSERT INTO Book(title,status,publish_date,price,category_id,author_name)
 VALUES 
-('CleanCode','1','2020-05-10','500000','1','Robert C.Martin'),
-('Đắc nhân tâm','0','2018-08-20','150000','2','DaleCarnegie'),
-('JavaScript Nâng cao','1','2023-01-15','350000','1','Kyle Simpson'),
-('Nhà giả kim','0','2015-11-25','120000','3','Paulo Coelho');
+('CleanCode',1,'2020-05-10',500000,1,'Robert C.Martin'),
+('Đắc nhân tâm',0,'2018-08-20',150000,2,'DaleCarnegie'),
+('JavaScript Nâng cao',1,'2023-01-15',350000,1,'Kyle Simpson'),
+('Nhà giả kim',0,'2015-11-25',120000,3,'Paulo Coelho');
 
 INSERT INTO BookOrder VALUES 
-('101','Nguyen Hai Nam','1','2025-01-10','2025-01-15'),
-('102','Tran Bao Ngoc','3','2025-02-05','2025-02-10'),
-('103','LeHoangYen','4','2025-03-12',NULL);
+(1,'Nguyen Hai Nam',1,'2025-01-10','2025-01-15'),
+(2,'Tran Bao Ngoc',3,'2025-02-05','2025-02-10'),
+(3,'LeHoangYen',4,'2025-03-12',NULL);
+
 
 UPDATE Book
 SET Price = Price + 50000
